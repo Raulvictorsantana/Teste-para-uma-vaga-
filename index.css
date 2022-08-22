@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Work+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 body{
 list-style: none;
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
 margin: 0;
 padding: 0;
 
@@ -8,9 +11,10 @@ padding: 0;
 
 header{
   display: flex;
-  justify-content:space-evenly; 
+justify-content: space-evenly;
   align-items: center;
   height: 80px; 
+
  
   
 }
@@ -150,6 +154,24 @@ ul li{
  
 }
 
+#texto1{
+  position: absolute;
+  font-size :1rem;
+  left: 75px;
+  top: 35px;
+  color: rgb(222, 225, 228);
+ 
+}
+
+#texto3{
+  position: absolute;
+  font-size :1rem;
+  left: 70px;
+  top: 35px;
+  color: rgb(222, 225, 228);
+
+}
+
 article,#engloba{
   max-width: 1000px;
   margin: 36px auto;
@@ -180,11 +202,12 @@ article,#engloba{
 .brinquedos:hover{
   filter: brightness(0.7) opacity(1);
   border-radius: 10px 10px 0 0;
-  width: 160px;
+  width: 150px;
   height: 220px;
  
 
 }
+
 .preço-brinquedos{
   text-align: center;
   font-weight: 550;
@@ -222,11 +245,17 @@ article,#engloba{
 
 }
 
-
 .texto-papel-de-parede-gato{
   position: relative;
  top:-50px;
  text-align: end;
+}
+
+#textoDestaque{
+  text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 #link-imagem{
@@ -241,6 +270,7 @@ article,#engloba{
 
 
 }
+
 #link-imagem:hover{
   background-color: rgb(87, 20, 175);
   cursor: pointer;
@@ -259,12 +289,12 @@ article,#engloba{
   font-weight: 600;
 
 }
+
 #link-imagem-gato:hover{
   background-color: rgb(87, 20, 175);
   cursor: pointer;
   
 }
-
 
 #semifooter{
   background-color: rgb(132, 68, 192);
@@ -345,6 +375,7 @@ textarea:focus, input:focus, select:focus {
   text-align: center;
   cursor: pointer;
 }
+
 #ultimoFooter{
   
   max-width: 1000px;
@@ -418,11 +449,19 @@ textarea:focus, input:focus, select:focus {
 #seta{
   width: 30px;
   height: 30px;
- margin-bottom:50px;
+margin-top: 20px;
   cursor: pointer;
-  margin-top: 10px;
-  margin-left: 10px;
+  background-color: antiquewhite;
+  margin-left: 20px;
+ 
   
+}
+@media(max-width: 1024px){
+  .papelDeParede{
+    text-align: center;
+   
+  }
+
 }
  
 @media(max-width: 768px){
@@ -474,6 +513,9 @@ textarea:focus, input:focus, select:focus {
     flex-wrap: wrap;
    
   }
+  #ração{
+    text-align: center;
+  }
   .container {
     position: relative;
     text-transform: uppercase;
@@ -484,13 +526,20 @@ textarea:focus, input:focus, select:focus {
     position: absolute;
   }
     
-  #texto {
+   #texto,#texto1, #texto3{ 
     position: absolute;
     font-size :0.9rem;
     left: 32px;
     top: 50px;
     color: rgb(222, 225, 228);
    
+  }
+  #texto1{
+    position: absolute;
+    font-size :0.9rem;
+    left: 48px;
+    top: 52px;
+    color: rgb(222, 225, 228);
   }
   article,#engloba{
     display: flex;
@@ -505,10 +554,7 @@ textarea:focus, input:focus, select:focus {
   flex-wrap: wrap;
   cursor: pointer;
 }
-.brinquedos{
-  width:  180px;
-  height: 200px;
-}
+
 .preço-brinquedos{
   text-align: center;
   font-weight: 550;
@@ -517,10 +563,13 @@ textarea:focus, input:focus, select:focus {
 }
 .papelDeParede{
   
-  width: 180px;
+  width: 210px;
   height: 150px;
   cursor: pointer;
   
+}
+#gatoEcachorro{
+  width: 700px;
 }
 .fivicon{
   width: 25px;
@@ -535,6 +584,7 @@ textarea:focus, input:focus, select:focus {
 #h1{
   font-size: 1.2rem;
 }
+
 #texto-cadastre{
   font-size: 0.8rem;
   margin-top: -20px;
@@ -550,20 +600,29 @@ textarea:focus, input:focus, select:focus {
 }
 #ultimoFooter{
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  margin: 2px
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
 }
+ #informações{
+ margin-top: 10px;
+
+
+}
+
+#contato{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 #imagem-footer,#pagamentos-footer{
   width: 100px;
   height: 50px;
 }
 
-#textoDestaque{
-  text-align: center;
-}
 .link-footer {
-  font-size: 2rem;
+  font-size: 8rem;
 }
 #pagamentos-footer, #texto-pagamento{
   display: none;
@@ -583,9 +642,7 @@ textarea:focus, input:focus, select:focus {
     max-width:540px;
    
   }
-  #opçaoNavegação{
-    width: 540px;
-  }
+  
   #ração, #brinquedo, #acessorio{
     width: 80px;
     height:65px;
@@ -597,6 +654,7 @@ textarea:focus, input:focus, select:focus {
     flex-wrap: wrap;
    
   }
+ 
   .container {
     position: relative;
     text-transform: uppercase;
@@ -618,8 +676,24 @@ textarea:focus, input:focus, select:focus {
   width:  150px;
   height: 200px;
 }
-   
-
+ #gatoEcachorro{
+margin-left: 80px;
+ }
+#texto,#texto1, #texto3{ 
+  position: absolute;
+  font-size :0.7rem;
+  left: 32px;
+  top: 50px;
+  color: rgb(222, 225, 228);
+ 
+}
+#texto1{
+  position: absolute;
+  font-size :0.8rem;
+  left: 45px;
+  top: 52px;
+  color: rgb(222, 225, 228);
+}
 
 .fivicon{
   width: 20px;
@@ -637,8 +711,8 @@ textarea:focus, input:focus, select:focus {
   
 }
   #icones{
-    width: 100px;
-    margin-left: 20px;
+    width: 200px;
+    margin-left: 100px;
   }
 #texto-cadastre{
   text-align:center ;
@@ -646,13 +720,22 @@ textarea:focus, input:focus, select:focus {
   margin-top: -10px;
 }
 #input{
- width: 100px;
+ padding: -20px;
 
 }
 #submit{
-  width: 45px;
-  height: 35px;
+  width: 50px;
+  height: 40px;
   text-align: center;
+  margin-top: -5px;
+  text-align: center;
+}
+
+#input-footer{
+  display: flex;
+  flex-direction: column; 
+ margin: 20px;
+height: 50px;
 }
 #ultimoFooter{
   display: flex;
@@ -662,19 +745,25 @@ textarea:focus, input:focus, select:focus {
   
 }
 #imagem-footer,#pagamentos-footer{
-  width: 80px;
+  width: 200px;
   height: 50px;
+  
 }
 
 #textoDestaque{
   text-align: center;
+  font-size: 1rem;
 }
  #informações a ,#contato p, #textoh1{
-  font-size: 0.5rem;
+  font-size: 1rem;
   margin-top: 10px;
+  margin-left: 100px;
 }
 #pagamentos-footer, #texto-pagamento{
   display: none;
+}
+#seta{
+  margin-left: 20px;
 }
 
 
