@@ -459,6 +459,8 @@ margin-top: 20px;
 @media(max-width: 1024px){
   .papelDeParede{
     text-align: center;
+    width: 300px;
+   
    
   }
 
@@ -563,9 +565,11 @@ margin-top: 20px;
 }
 .papelDeParede{
   
-  width: 210px;
+  width: 200px;
   height: 150px;
   cursor: pointer;
+  margin: -5px;
+  max-width: 200px;
   
 }
 #gatoEcachorro{
